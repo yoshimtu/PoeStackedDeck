@@ -1,0 +1,7 @@
+{
+  "id": "poe.stacked-deck-tracker",
+  "name": "Stacked Deck Tracker",
+  "version": "1.1.0",
+  "hostApi": 1,
+  "entry": "StackedDeckTracker.dll"
+}

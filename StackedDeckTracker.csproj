@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>StackedDeckTracker</AssemblyName>
+    <RootNamespace>StackedDeckTracker</RootNamespace>
+    <Version>1.1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Tests/**/*.cs" />
+    <ProjectReference Condition="!Exists('sdk/PluginHost.dll')" Include="../Host/PluginHost.csproj" Private="false" />
+    <Reference Condition="Exists('sdk/PluginHost.dll')" Include="PluginHost" HintPath="sdk/PluginHost.dll" Private="false" />
+  </ItemGroup>
+</Project>
